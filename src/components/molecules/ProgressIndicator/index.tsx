@@ -8,8 +8,8 @@ const Index = ({
   porcentage: number;
 }) => {
   return (
-    <div>
-      <div className="flex justify-between items-center mb-2">
+    <div className="w-[220px]">
+      <div className="flex justify-between items-center mb-2 ">
         <TextRegular2 text={title}></TextRegular2>
         <TextRegular2 text={`${porcentage}%`}></TextRegular2>
       </div>
