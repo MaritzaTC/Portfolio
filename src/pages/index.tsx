@@ -1,6 +1,5 @@
 import React from "react";
-import PanelLeft from "@/components/organisms/PanelLeft";
-import SocialSideBar from "@/components/molecules/SocialSideBar";
+
 import GeneralInformation from "@/components/molecules/GeneralInformation";
 import CardEducation from "@/components/organisms/CardEducation";
 import CardPersonal from "@/components/organisms/CardPersonal";
