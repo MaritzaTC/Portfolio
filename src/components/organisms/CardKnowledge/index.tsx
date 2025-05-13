@@ -1,7 +1,7 @@
 import React from 'react'
 import GeneralInformation from "@/components/molecules/GeneralInformation";
 import { SubTitle4, TextRegular2 } from '@/components/atoms/Titles'
-import { IconCard1 } from '@/components/atoms/Icons/index'
+
 
 const knowledge = [
 {
