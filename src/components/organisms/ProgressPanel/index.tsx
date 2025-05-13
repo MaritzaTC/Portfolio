@@ -1,4 +1,3 @@
-
 import React from 'react'
 import ProgressIndicator from '@/components/molecules/ProgressIndicator';
 import { SubTitle2 } from '@/components/atoms/Titles';
@@ -38,6 +37,7 @@ const Index = () => {
         <ProgressIndicator key={language.title} title={language.title} porcentage={language.porcentage} />
     ))}
    </div>
+    <hr className="w-[220px] h-[1px] bg-gray-300 my-10 border-none gap-6 " />
    <div>
    <SubTitle2 text='Programming Languages'></SubTitle2>
     {ProgressPanelProgrammingLanguages.map((language) => (

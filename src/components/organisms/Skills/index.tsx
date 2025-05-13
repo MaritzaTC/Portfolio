@@ -31,7 +31,7 @@ const Skills = [
 
 const Index = () => {
     return (
-        <div>
+        <div className="w-[220px]">
             <SubTitle2 text='Extra Skills'></SubTitle2>
             {Skills.map((skill)=>(
                 <div className="flex gap-2 items-center" key={skill.title}>
