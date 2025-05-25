@@ -13,8 +13,14 @@ import { useState } from 'react';
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
 SwiperCore.use([Pagination, EffectCoverflow]);
-
-const portfolio = [
+interface PortfolioItem {
+  title: string;
+  description: string;
+  image: string;
+  details: string;
+  github: string;
+}
+const portfolio: PortfolioItem[]  = [
   {
     image: "/poke.png",
     title: "Pokémon Web App",
@@ -39,9 +45,9 @@ const portfolio = [
 ];
 
 export default function Index() {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] =useState<PortfolioItem | null>(null);
 
-  const handleOpen = (item) => {
+  const handleOpen = (item: PortfolioItem) => {
     setSelectedItem(item);
   };
 
@@ -64,27 +70,7 @@ export default function Index() {
     slidesPerView={'auto'}
     spaceBetween={72}
     pagination={{ clickable: true }}
-    effect={'coverflow'}
-    coverflowEffect={{
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2.5,
-    }}
-    breakpoints={{
-    640: { // sm
-      spaceBetween: 32,
-    },
-    768: { // md
-      spaceBetween: 48,
-    },
-    1024: { // lg
-      spaceBetween: 64,
-    },
-    1280: { // xl
-      spaceBetween: 72,
-    },
-  }}
+  
   >
     {portfolio.map((item) => (
       <SwiperSlide
@@ -92,7 +78,7 @@ export default function Index() {
        className="!w-[260px] !h-[400px] sm:!w-[280px] sm:!h-[420px] md:!w-[300px] md:!h-[440px] lg:!w-[310px] lg:!h-[474px]"
       >
         <div className="flex flex-col items-center justify-start bg-white">
-          <div className=''>   <Img3 img={item.image} />
+          <div >   <Img3 img={item.image} />
           </div>
        
           <div className="p-4">
