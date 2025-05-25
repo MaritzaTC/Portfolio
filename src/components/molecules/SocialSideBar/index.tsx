@@ -11,7 +11,7 @@ const Index = () => {
         { href: "https://www.youtube.com/@maritzatabarezcardenas4842/featured", icon: "tabler:brand-youtube-filled" },
     ];
     return (
-        <div className="bg-white w-[95px] h-[100vh] flex flex-col justify-start items-center fixed top-0 right-0 z-10 gap-[15px] pt-[73px] ">
+        <div className="bg-white w-[95px] h-full max-h-[100vh] flex flex-col justify-start items-center fixed top-0 right-0 z-10 gap-[15px] pt-[73px] ">
             <SubTitle4 text="Links" />
             <nav className="flex flex-col w-[48px] h-[363px] gap-[15px]">
                 {socialLinks.map(({ href, icon }) => (
