@@ -54,13 +54,11 @@ const Index = () => {
             </div>
             </div>
 
-          <div className="flex flex-col gap-2 w-full md:w-1/2">
+          <div className="flex flex-col gap-2 w-full ">
             <SubTitle4 text={education.Certificate}></SubTitle4>
           <TextRegular2 text={education.description}></TextRegular2>
           </div>
-          {/* <div className="flex ">
- <hr className="w-[901px] h-[1px] bg-gray-200 my-4 border-none" />
-          </div> */}
+    
          
         </div>
       ))}
