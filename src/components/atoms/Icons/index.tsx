@@ -44,10 +44,10 @@ const IconSkill = () => {
 }
 
 
-const ButtonIcon = ({ icon }: { icon: string }) => {
+const ButtonIcon = ({ icon, className }: { icon: string; className?: string }) => {
     return (
-        <div className="bg-[#FFB400] rounded-full w-12 h-12 flex justify-center items-center " >
-              <Icon icon={`${icon}`} width='16' height='16' className='text-black'   />
+        <div className=" rounded-full w-12 h-12 flex justify-center items-center " >
+              <Icon icon={`${icon}`} width='16' height='16' className={`text-[18px] font-bold ${className ?? ''}`}   />
         </div>
     );
 };  
