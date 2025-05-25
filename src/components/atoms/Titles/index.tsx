@@ -39,9 +39,9 @@ const SubTitle3 = ({text}: {text: string}) => {
         </h1>
     );
 };
-const SubTitle4 = ({text}: {text: string}) => {
+const SubTitle4 = ({text, className}: {text: string; className?: string}) => {
     return (
-        <h4 className='text-[18px] font text-bold ' >
+        <h4 className={`text-[18px] font-bold ${className ?? ''}`} >
            {text}
         </h4>
     );
@@ -54,9 +54,9 @@ const TextRegular = ({text}: {text: string}) => {
     );
 };
 
-const TextRegular2 = ({text}: {text: string}) => {
+const TextRegular2 = ({text, className}: {text: string; className?: string}) => {
     return (
-        <p className='text-[15px] font-normal  text-[#767676]' >
+        <p className={`text-[15px] font-normal  text-[#767676]  ${className ?? ''}`} >
            {text}
         </p>
     );
@@ -84,5 +84,13 @@ const TextRegular5 = ({text}: {text: string}) => {
         </h1>
     );
 }
+const TextRegular6 = ({text, className}: {text: string; className?: string}) => {
+    return (
+        <p className={`text-[8px] font-normal  text-[#767676]  ${className ?? ''}`} >
+           {text}
+        </p>
+    );
+}
 
-export {TextTitle, SubTitle, TextTitle2, SubTitle2, SubTitle3,SubTitle4,TextRegular,TextRegular2,TextRegular3,TextRegular4,TextRegular5};
+
+export {TextTitle, SubTitle, TextTitle2, SubTitle2, SubTitle3,SubTitle4,TextRegular,TextRegular2,TextRegular3,TextRegular4,TextRegular5,TextRegular6};
