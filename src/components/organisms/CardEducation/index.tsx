@@ -1,5 +1,6 @@
 import React from "react";
 import { SubTitle4, TextRegular2,TextRegular4, TextRegular5} from "@/components/atoms/Titles";
+import GeneralInformation from "@/components/molecules/GeneralInformation";
 const educationData = [
   { 
     university: "University of Antioquia",
@@ -35,18 +36,25 @@ const educationData = [
 
 const Index = () => {
  return(
-      <div className="bg-white p-2  w-[970px] flex flex-col-reverse divide-y-1 divide-y-reverse divide-gray-200 " >
+  <div>
+    <div className="flex flex-col items-center justify-center">
+       <GeneralInformation
+                title="Education"
+                description="Education has always been my gateway to growth. I strive to acquire knowledge that not only sharpens my technical abilities but also contributes to solving problems that matter in today's technology-driven world."
+              />
+    </div>
+    <div className="bg-white p-2  w-full max-w-[970px] mx-auto flex flex-col-reverse divide-y-1 divide-y-reverse divide-gray-200 " >
       {educationData.map((education) => (
         <div key={education.university} className="flex p-8" >
             <div className="flex flex-col gap-2 pr-[120px]">
                  <SubTitle4 text={education.university}></SubTitle4>
-            <div className="flex flex-row gap-8">
+            <div className="flex flex-col sm:flex-row  gap-8">
           <TextRegular4 text={education.rol}></TextRegular4>
           <TextRegular5 text={education.date}></TextRegular5>
             </div>
             </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-full md:w-1/2">
             <SubTitle4 text={education.Certificate}></SubTitle4>
           <TextRegular2 text={education.description}></TextRegular2>
           </div>
@@ -57,6 +65,8 @@ const Index = () => {
         </div>
       ))}
     </div>
+  </div>
+      
  )
 }
 
