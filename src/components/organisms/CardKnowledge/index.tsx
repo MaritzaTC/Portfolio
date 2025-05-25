@@ -1,14 +1,40 @@
 import React from 'react'
 import GeneralInformation from "@/components/molecules/GeneralInformation";
 import { SubTitle4, TextRegular2 } from '@/components/atoms/Titles'
+import { KnowledgeImg } from '@/components/atoms/Img';
 
 
 const knowledge = [
+    {
+  image: "/icon_api.png",
+  title: "REST API Development",
+  description: "Backend services using Node.js and Spring Boot.",
+},
 {
+  image: "/coding.png",
+  title: "Web Development",
+  description: "Modern websites using HTML, CSS, JavaScript, or React with Tailwind CSS.",
+},
+{
+    image: "/illustration.png",
     title: "UI/UX Design",
-    description: "Movil App, Website Design.",
-    icon: 'tabler:brand-instagram-filled'
-}
+    description: "Mobile app and website interface design.",
+  },
+  {
+    image: "/icon_sql.png",
+    title: "SQL Databases",
+    description: "Data modeling, SQL queries, stored procedures.",
+  },
+  {
+    image: "/NoSql.png",
+    title: "NoSQL Databases",
+    description: "MongoDB, Firebase, and document-oriented data.",
+  },
+  {
+    image: "/github.png",
+    title: "Git & GitHub",
+    description: "Version control, team collaboration, and workflows.",
+  }
 
 ];
 
@@ -17,18 +43,18 @@ const knowledge = [
 const Index = () => {
     return(
         <div>
-            <div>
+            <div className='flex flex-col items-center justify-center'>
                  <GeneralInformation
                           title="My Knowledge"
                           description="Education has always been my gateway to growth. I strive to acquire knowledge that not only sharpens my technical abilities but also contributes to solving problems that matter in today's technology-driven world."
                         />
             </div>
-            <div className='flex flex-row items-center justify-center gap-8 mt-8 bg-white w-[310px] h-[225px]'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ' >
                 {knowledge.map((item) => (
-                    <div key={item.title} className="flex flex-col items-center justify-center">
+                    <div key={item.title} className="flex flex-col items-center justify-center w-[310px] bg-white h-[225px] p-8 gap-4">
+                        <KnowledgeImg icon={item.image}></KnowledgeImg>
                         <SubTitle4 text={item.title}></SubTitle4>
                         <TextRegular2 text={item.description}></TextRegular2>
-                       {/* <IconCard1 icon={item.icon} /> */}
                     </div>
                 ))}
             </div>
