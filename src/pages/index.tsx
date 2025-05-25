@@ -1,22 +1,21 @@
 import React from "react";
 
-import GeneralInformation from "@/components/molecules/GeneralInformation";
 import CardEducation from "@/components/organisms/CardEducation";
 import CardPersonal from "@/components/organisms/CardPersonal";
 import CardKnowledge from "@/components/organisms/CardKnowledge";
+import SocialSideBar from "@/components/molecules/SocialSideBar";
+import PanelLeft from "@/components/organisms/PanelLeft";
+import CardPortfolio from "@/components/organisms/CardPortfolio";
 export default function Home() {
   return (
-    <div className="bg-[#F0F0F6] ">
-      {/* <SocialSideBar></SocialSideBar>
-   <PanelLeft></PanelLeft> */}
-      <div className="flex flex-col items-center justify-center min-h-screen bg-[#F0F0F6]">
+    <div className="bg-[#F0F0F6] min-h-screen flex gap-10">
+      <SocialSideBar></SocialSideBar>
+   <PanelLeft></PanelLeft>
+      <div className="flex-1/4 flex flex-col items-center justify-center bg-[#F0F0F6] mr-14">
         <CardPersonal></CardPersonal>
         <CardKnowledge></CardKnowledge>
-        <GeneralInformation
-          title="Education"
-          description="Education has always been my gateway to growth. I strive to acquire knowledge that not only sharpens my technical abilities but also contributes to solving problems that matter in today's technology-driven world."
-        />
         <CardEducation></CardEducation>
+        <CardPortfolio></CardPortfolio>
       </div>
     </div>
   );
