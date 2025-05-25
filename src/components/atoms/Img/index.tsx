@@ -40,7 +40,8 @@ const Img3 = ({ img}: { img: string }) => {
              src={img}
              alt="Check mark"
              width={310}
-             height={300}
+             height={100}
+             className='hover:scale-105 transition-all duration-300  aspect-square object-cover bg-gray-100'
            />
     );
 }
