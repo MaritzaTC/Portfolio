@@ -41,9 +41,9 @@ const SubTitle3 = ({text}: {text: string}) => {
 };
 const SubTitle4 = ({text}: {text: string}) => {
     return (
-        <h2 className='text-[18px] font ' >
+        <h4 className='text-[18px] font text-bold ' >
            {text}
-        </h2>
+        </h4>
     );
 };
 const TextRegular = ({text}: {text: string}) => {
@@ -56,9 +56,9 @@ const TextRegular = ({text}: {text: string}) => {
 
 const TextRegular2 = ({text}: {text: string}) => {
     return (
-        <h1 className='text-[15px] font-normal  text-[#767676]' >
+        <p className='text-[15px] font-normal  text-[#767676]' >
            {text}
-        </h1>
+        </p>
     );
 }
 
@@ -84,4 +84,5 @@ const TextRegular5 = ({text}: {text: string}) => {
         </h1>
     );
 }
+
 export {TextTitle, SubTitle, TextTitle2, SubTitle2, SubTitle3,SubTitle4,TextRegular,TextRegular2,TextRegular3,TextRegular4,TextRegular5};
