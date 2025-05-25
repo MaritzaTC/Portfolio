@@ -16,7 +16,7 @@ const Img1 = () => {
 
 const Img2 = () => {
     return (
-       <Image
+       <Image 
              src="/Maritza.png"
              alt="Check mark"
              width={325.72}
@@ -24,9 +24,29 @@ const Img2 = () => {
            />
     );
 }
+const KnowledgeImg = ({ icon }: { icon: string }) => {
+    return (
+        <Image
+        src={icon}
+        alt="Check mark"
+        width={68}
+        height={68}
+      />
+    );
+}
+const Img3 = ({ img}: { img: string }) => {
+    return (
+       <Image 
+             src={img}
+             alt="Check mark"
+             width={310}
+             height={300}
+           />
+    );
+}
 
 
 
-export {Img1,Img2};
+export {Img1,Img2,KnowledgeImg,Img3};
 
 
