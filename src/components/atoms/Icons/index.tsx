@@ -42,4 +42,14 @@ const IconSkill = () => {
       />
     );
 }
-export {IconLinks, IconCard1,IconCard2,IconCard3,IconSkill};
+
+
+const ButtonIcon = ({ icon }: { icon: string }) => {
+    return (
+        <div className="bg-[#FFB400] rounded-full w-12 h-12 flex justify-center items-center " >
+              <Icon icon={`${icon}`} width='16' height='16' className='text-black'   />
+        </div>
+    );
+};  
+
+export {IconLinks, IconCard1,IconCard2,IconCard3,IconSkill,ButtonIcon};
