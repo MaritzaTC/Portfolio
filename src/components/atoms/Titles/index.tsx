@@ -54,6 +54,13 @@ const TextRegular = ({text}: {text: string}) => {
     );
 };
 
+/**
+ * Renders a regular styled paragraph text with customizable content and optional additional CSS classes.
+ *
+ * @param text - The text content to display inside the paragraph.
+ * @param className - Optional additional CSS class names to apply to the paragraph element.
+ * @returns A React element displaying the provided text with predefined and custom styles.
+ */
 const TextRegular2 = ({text, className}: {text: string; className?: string}) => {
     return (
         <p className={`text-[15px] font-normal  text-[#767676]  ${className ?? ''}`} >

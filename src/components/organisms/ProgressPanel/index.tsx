@@ -9,6 +9,12 @@ const ProgressPanelLanguages = [{
     porcentage: 100,
 },];
 
+/**
+ * Represents a list of programming languages with their respective proficiency percentages.
+ * Each object in the array contains:
+ * - `title`: The name of the programming language.
+ * - `porcentage`: The proficiency percentage (0-100) for the language.
+ */
 const ProgressPanelProgrammingLanguages = [
     {
         title: 'JavaScript',
@@ -28,6 +34,13 @@ const ProgressPanelProgrammingLanguages = [
     },
 ]
 
+/**
+ * Renders the ProgressPanel component, displaying two sections:
+ * one for general languages and another for programming languages.
+ * Each section lists language proficiency using the ProgressIndicator component.
+ *
+ * @returns {JSX.Element} The rendered ProgressPanel component.
+ */
 const Index = () => {
     return (
 <div >

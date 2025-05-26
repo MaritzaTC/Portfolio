@@ -1,5 +1,13 @@
 import React from "react";
 import { TextRegular2 } from "@/components/atoms/Titles";
+/**
+ * ProgressIndicator component that displays a progress bar with a title and percentage.
+ *
+ * @param title - The label or name to display for the progress indicator.
+ * @param porcentage - The progress value as a percentage (0-100) to visually represent.
+ *
+ * @returns A styled progress indicator with a label and percentage value.
+ */
 const Index = ({
   title,
   porcentage,

@@ -1,6 +1,16 @@
 import { TextRegular2, TextRegular6 } from '@/components/atoms/Titles'
 import React from 'react'
 
+/**
+ * Footer component displaying copyright and university information.
+ *
+ * @returns {JSX.Element} The footer section containing copyright,
+ * university affiliation, and a legal notice.
+ *
+ * @remarks
+ * This component uses custom `TextRegular2` and `TextRegular6` components
+ * for text rendering. It is styled with Tailwind CSS classes for layout and appearance.
+ */
 export default function index() {
     return (
         <footer className='bg-white flex flex-col items-center justify-center w-full h-24 mt-10'>

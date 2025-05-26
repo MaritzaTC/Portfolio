@@ -2,6 +2,11 @@ import React from 'react'
 import Image from 'next/image';
 
 
+/**
+ * Renders a circular profile image using the Next.js `Image` component.
+ *
+ * @returns {JSX.Element} A styled image element with a fixed size and rounded appearance.
+ */
 const Img1 = () => {
     return (
        <Image

@@ -9,6 +9,12 @@ import CardPortfolio from "@/components/organisms/CardPortfolio";
 import Footer from "@/components/molecules/Footer";
 
 
+/**
+ * The main Home page component for the portfolio application.
+ *
+ * @returns The JSX layout for the home page, including the social sidebar, left panel,
+ *          and a central column with personal, knowledge, education, portfolio cards, and a footer.
+ */
 export default function Home() {
  
 

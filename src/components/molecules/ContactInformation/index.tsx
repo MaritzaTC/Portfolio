@@ -11,6 +11,12 @@ const ContactInformation = [
 ]
 
 
+/**
+ * Renders a list of contact information items using the `ContactInformation` array.
+ * Each item displays its title and corresponding text in a flex row.
+ *
+ * @returns {JSX.Element} A container with a list of contact information rows.
+ */
 export default function index() {
   return (
     <div className='w-[220px] '>

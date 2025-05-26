@@ -4,6 +4,13 @@ import { Img2 } from '../../atoms/Img/index'
 import { TextTitle, TextRegular, TextTitle2 } from '../../atoms/Titles/index'
 import { HireMe } from '@/components/atoms/Button'
 import { Dialog } from '@/components/molecules/Dialog';
+/**
+ * Renders the main personal card component for the portfolio, displaying personal information,
+ * a brief introduction, and a "Hire Me" dialog. The component includes a title, subtitle,
+ * description, and an image, and manages the state for showing or hiding the dialog.
+ *
+ * @returns {JSX.Element} The rendered personal card component.
+ */
 export default function index() {
    // eslint-disable-next-line react-hooks/rules-of-hooks
    const [showDialog, setShowDialog] = useState(false);

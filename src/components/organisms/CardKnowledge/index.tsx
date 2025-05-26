@@ -4,6 +4,26 @@ import { SubTitle4, TextRegular2 } from '@/components/atoms/Titles'
 import { KnowledgeImg } from '@/components/atoms/Img';
 
 
+/**
+ * An array of knowledge objects representing different technical skills and areas of expertise.
+ *
+ * Each object in the array contains:
+ * - `image`: The path to an icon representing the skill.
+ * - `title`: The name of the skill or area of knowledge.
+ * - `description`: A brief description of the skill, including relevant technologies or concepts.
+ *
+ * Example usage:
+ * ```tsx
+ * {knowledge.map(item => (
+ *   <Card
+ *     key={item.title}
+ *     image={item.image}
+ *     title={item.title}
+ *     description={item.description}
+ *   />
+ * ))}
+ * ```
+ */
 const knowledge = [
     {
   image: "/icon_api.png",
@@ -40,6 +60,15 @@ const knowledge = [
 
 
 
+/**
+ * Renders the knowledge section of the portfolio, including a general information header
+ * and a responsive grid of knowledge cards.
+ *
+ * Each card displays an icon, a title, and a description representing a specific area of knowledge.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered knowledge section.
+ */
 const Index = () => {
     return(
         <div>

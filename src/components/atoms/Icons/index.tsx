@@ -44,6 +44,13 @@ const IconSkill = () => {
 }
 
 
+/**
+ * Renders a circular button containing an icon centered within it.
+ *
+ * @param icon - The name or identifier of the icon to display.
+ * @param className - Optional additional CSS classes to apply to the icon.
+ * @returns A JSX element representing the icon button.
+ */
 const ButtonIcon = ({ icon, className }: { icon: string; className?: string }) => {
     return (
         <div className=" rounded-full w-12 h-12 flex justify-center items-center " >

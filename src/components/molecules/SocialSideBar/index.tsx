@@ -1,6 +1,16 @@
 import React from "react";
 import { IconLinks } from "@/components/atoms/Icons";
 import { SubTitle4 } from "@/components/atoms/Titles";
+/**
+ * Renders a fixed vertical sidebar containing social media links with their respective icons.
+ *
+ * The sidebar is positioned on the right side of the viewport and displays a list of social media
+ * platforms as clickable icons, each opening the corresponding link in a new tab. The sidebar also
+ * includes a subtitle labeled "Links".
+ *
+ * @component
+ * @returns {JSX.Element} The rendered sidebar with social media links.
+ */
 const Index = () => {
     const socialLinks = [
         { href: "https://www.facebook.com/share/1FVxt8FY5J/", icon: "tabler:brand-facebook-filled" },

@@ -20,6 +20,17 @@ interface PortfolioItem {
   details: string;
   github: string;
 }
+/**
+ * Represents a portfolio item to be displayed in the portfolio section.
+ * Each item contains information about a specific project, including its image, title, description, detailed information, and a link to the project's GitHub repository.
+ *
+ * @type {PortfolioItem[]}
+ * @property {string} image - The path to the project's representative image.
+ * @property {string} title - The title of the project.
+ * @property {string} description - A brief summary of the project.
+ * @property {string} details - Detailed information about the project, including features and technologies used.
+ * @property {string} github - The URL to the project's GitHub repository.
+ */
 const portfolio: PortfolioItem[]  = [
   {
     image: "/poke.png",
@@ -44,6 +55,14 @@ const portfolio: PortfolioItem[]  = [
   },
 ];
 
+/**
+ * Renders the portfolio section, displaying a list of projects in a Swiper carousel.
+ * Each project card shows an image, title, description, and a "Learn More" button.
+ * When a project is selected, a dialog with detailed information and a GitHub link is shown.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered portfolio section with interactive project cards and modal dialog.
+ */
 export default function Index() {
   const [selectedItem, setSelectedItem] =useState<PortfolioItem | null>(null);
 

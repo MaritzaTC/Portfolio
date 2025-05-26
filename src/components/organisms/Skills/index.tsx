@@ -29,6 +29,14 @@ const Skills = [
     },
 ]
 
+/**
+ * Renders a list of extra skills with their corresponding icons.
+ *
+ * This component displays a subtitle and iterates over the `Skills` array,
+ * rendering each skill with an icon and its title.
+ *
+ * @returns {JSX.Element} The rendered skills section.
+ */
 const Index = () => {
     return (
         <div className="w-[220px]">

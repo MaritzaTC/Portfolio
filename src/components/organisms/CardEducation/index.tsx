@@ -1,6 +1,16 @@
 import React from "react";
 import { SubTitle4, TextRegular2,TextRegular4, TextRegular5} from "@/components/atoms/Titles";
 import GeneralInformation from "@/components/molecules/GeneralInformation";
+/**
+ * Array of education records representing academic background and certifications.
+ *
+ * Each object in the array contains:
+ * - `university`: Name of the educational institution.
+ * - `rol`: Role or position held (e.g., Student).
+ * - `date`: Duration or year(s) attended.
+ * - `Certificate`: Name of the degree, diploma, or certificate obtained.
+ * - `description`: Brief summary of the training, focus areas, and skills acquired.
+ */
 const educationData = [
   { 
     university: "University of Antioquia",
@@ -34,6 +44,14 @@ const educationData = [
 ];
 
 
+/**
+ * Renders the Education card component, displaying a general information section
+ * and a list of educational experiences. Each education entry includes the university,
+ * role, date, certificate, and a description. The layout is responsive and styled using Tailwind CSS.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Education card component.
+ */
 const Index = () => {
  return(
   <div>
