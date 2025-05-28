@@ -10,8 +10,8 @@ import Image from 'next/image';
 const Img1 = () => {
     return (
        <Image
-             src="/Maritza1.png"
-             alt="Check mark"
+             src="/maritza1.png"
+             alt="Maritza"
              width={150}
              height={150}
              className=' w-[150px] h-full rounded-full aspect-square object-cover bg-gray-100'
@@ -23,7 +23,7 @@ const Img2 = () => {
     return (
        <Image 
              src="/Maritza.png"
-             alt="Check mark"
+             alt="Photo of Maritza"
              width={325.72}
              height={459.09}
            />

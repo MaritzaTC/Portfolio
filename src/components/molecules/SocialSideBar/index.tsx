@@ -13,8 +13,8 @@ import { SubTitle4 } from "@/components/atoms/Titles";
  */
 const Index = () => {
     const socialLinks = [
-        { href: "https://www.facebook.com/share/1FVxt8FY5J/", icon: "tabler:brand-facebook-filled" },
-        { href: "https://www.instagram.com/maritza9905?igsh=b3JkejJxb3I5bmlv", icon: "tabler:brand-instagram-filled" },
+     
+      
         { href: "https://www.linkedin.com/in/maritza-tabarez-c%C3%A1rdenas-51868b355/", icon: "tabler:brand-linkedin-filled" },
         { href: "https://github.com/MaritzaTC", icon: "tabler:brand-github-filled" },
         { href: "https://wa.me/3216679196", icon: "tabler:brand-whatsapp-filled" },
